@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Dark CloudA",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://wsb-nlu.clouda.edu.pl/*"
+            ],
+            "js": [
+                "Content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "Dark CloudA"
+    }
+}
