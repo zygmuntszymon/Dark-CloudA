@@ -8,6 +8,7 @@
                 "https://wsb-nlu.clouda.edu.pl/*"
             ],
             "js": [
+                "jquery-3.6.4.min",
                 "Content.js"
             ]
         }
