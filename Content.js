@@ -12,6 +12,9 @@ let materialIcons = document.querySelectorAll('.material-icons')
 let cards = document.querySelectorAll('.tablicaZawartosc')
 let sidebarElements = document.querySelectorAll('#menuOsobisteClouda .side-nav #slideOutBody ul li a')
 let sidebar = document.querySelector('#slide-out')
+let sitemapa = document.querySelector('#siteMapa')
+let newsCard = document.querySelector('.collection .collection-item.avatar ')
+let recentNews = document.querySelectorAll('.recent-news .card')
 
 //STYLING
 layoutBody.style.backgroundColor = bgColor;
@@ -36,10 +39,15 @@ sidebarElements.forEach((element) => {
     })
 })
 
-sidebar.style.background = bgColor
+sidebar.style.background = bgColor;
+sitemapa.style.background = bgColor;
+newsCard.style.background = bgColor;
+newsCard.style.color = textColor;
 
-
-
+recentNews.forEach((card) => {
+    card.style.background = contentColor;
+    card.style.color = textColor;
+})
 
 
 
