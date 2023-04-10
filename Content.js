@@ -13,9 +13,8 @@ let cards = document.querySelectorAll('.tablicaZawartosc')
 let sidebarElements = document.querySelectorAll('#menuOsobisteClouda .side-nav #slideOutBody ul li a')
 let sidebar = document.querySelector('#slide-out')
 let sitemapa = document.querySelector('#siteMapa')
-let newsCard = document.querySelector('.collection .collection-item.avatar ')
-let recentNews = document.querySelectorAll('.recent-news .card')
-
+let btns = document.querySelectorAll('.btn-flat')
+let tabs = document.querySelectorAll('.tab')
 //STYLING
 layoutBody.style.backgroundColor = bgColor;
 navWrapper.style.backgroundColor = bgColor;
@@ -41,17 +40,19 @@ sidebarElements.forEach((element) => {
 
 sidebar.style.background = bgColor;
 sitemapa.style.background = bgColor;
-newsCard.style.background = bgColor;
-newsCard.style.color = textColor;
-
-recentNews.forEach((card) => {
-    card.style.background = contentColor;
-    card.style.color = textColor;
+console.log(btns)
+btns.forEach(btn => {
+    btn.style.color = 'white';
+    btn.style.border = '1px solid white'
 })
+document.querySelector('.cardPozycjaTresc').style.background = contentColor;
+document.querySelector('.cardPozycjaTresc').style.color = color;
+document.querySelector('.cardPozycjaTresc').style.border = '1px solid white'
 
-
-
-
+tabs.forEach(tab => {
+    tab.style.color = contentColor;
+    tab.style.border = textColor
+})
 
 
 
