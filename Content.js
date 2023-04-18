@@ -3,9 +3,7 @@ let bgColor = '#191A30'
 let contentColor = '#141425'
 let secondaryColor = '#3E4074'
 let textColor = '#b1b1b1'
-console.log(1)
 
-console.log(2)
 let layoutBody = document.querySelector('#layoutBody')
 let navWrapper = document.querySelector('.nav-wrapper')
 let materialIcons = document.querySelectorAll('.material-icons')
@@ -15,6 +13,7 @@ let sidebar = document.querySelector('#slide-out')
 let sitemapa = document.querySelector('#siteMapa')
 let btns = document.querySelectorAll('.btn-flat')
 let tabs = document.querySelectorAll('.tab')
+let stopkaText = document.querySelectorAll('.stopkaLeft > span')
 //STYLING
 layoutBody.style.backgroundColor = bgColor;
 navWrapper.style.backgroundColor = bgColor;
@@ -40,18 +39,23 @@ sidebarElements.forEach((element) => {
 
 sidebar.style.background = bgColor;
 sitemapa.style.background = bgColor;
-console.log(btns)
+
 btns.forEach(btn => {
     btn.style.color = 'white';
     btn.style.border = '1px solid white'
 })
 document.querySelector('.cardPozycjaTresc').style.background = contentColor;
-document.querySelector('.cardPozycjaTresc').style.color = color;
+document.querySelector('.cardPozycjaTresc').style.color = textColor;
 document.querySelector('.cardPozycjaTresc').style.border = '1px solid white'
 
 tabs.forEach(tab => {
     tab.style.color = contentColor;
     tab.style.border = textColor
+})
+console.log(stopkaText)
+stopkaText.forEach(text => {
+    text.style.color = 'white';
+    console.log(text.style.color)
 })
 
 
