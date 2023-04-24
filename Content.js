@@ -14,6 +14,9 @@ let sitemapa = document.querySelector('#siteMapa')
 let btns = document.querySelectorAll('.btn-flat')
 let tabs = document.querySelectorAll('.tab')
 let stopkaText = document.querySelectorAll('.stopkaLeft > span')
+
+let cardPanel = document.getElementsByClassName('card-panel');
+
 //STYLING
 layoutBody.style.backgroundColor = bgColor;
 navWrapper.style.backgroundColor = bgColor;
@@ -44,19 +47,27 @@ btns.forEach(btn => {
     btn.style.color = 'white';
     btn.style.border = '1px solid white'
 })
-document.querySelector('.cardPozycjaTresc').style.background = contentColor;
-document.querySelector('.cardPozycjaTresc').style.color = textColor;
-document.querySelector('.cardPozycjaTresc').style.border = '1px solid white'
+// document.querySelector('.cardPozycjaTresc').style.background = contentColor;
+// document.querySelector('.cardPozycjaTresc').style.color = textColor;
+// document.querySelector('.cardPozycjaTresc').style.border = '1px solid white'
 
 tabs.forEach(tab => {
     tab.style.color = contentColor;
     tab.style.border = textColor
 })
-console.log(stopkaText)
+
 stopkaText.forEach(text => {
     text.style.color = 'white';
     console.log(text.style.color)
 })
+
+cardPanelArray = Array.prototype.slice.call(cardPanel);
+
+cardPanelArray.map(panel => {
+    console.log(panel)
+})
+
+
 
 
 
